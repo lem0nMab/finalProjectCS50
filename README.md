@@ -10,6 +10,13 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
 - `login.html`: La plantilla HTML para la página de inicio de sesión.
 - `register.html`: La plantilla HTML para la página para crear una cuenta.
 - `ranking.html`: Este archivo representa la página de clasificación (ranking) del juego de la serpiente. Muestra una tabla con la posición, nombre de usuario y puntuación de los jugadores.
+      - `extends "layout.html"`: Utiliza el archivo de diseño principal "layout.html" como plantilla base.
+      - `block title`: Define el título de la página como "Ranking Serpiente".
+      - `block main`: Contiene el contenido principal de la página, incluyendo el encabezado, la tabla y los datos de los jugadores.
+      - `for loop in ranking`: Itera sobre los elementos de la variable "ranking" para mostrar la información de los jugadores en la tabla.
+      - `if loop.index==1`: Aplica una clase CSS especial a la primera posición de la tabla.
+      - `if loop.index == 1`: Muestra un ícono de corona en la primera posición de la tabla.
+  
 - `newPassword.html`: La plantilla HTML para la página de cambiar contraseña.
 - `static/`: Directorio que contiene los archivos estáticos, como imágenes y hojas de estilo CSS.
 - `helpers.py`: Módulo de ayuda que contiene funciones auxiliares utilizadas por `app.py`.
