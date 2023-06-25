@@ -4,6 +4,7 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
 
 ## Estructura de archivos
 
+### `template/`: Contiene los archivos HTML
 - `layout.html`: La plantilla base de HTML que define la estructura común de todas las páginas.
 - `index.html`: La plantilla HTML para la página de inicio que muestra los juegos disponibles.
 - `login.html`: La plantilla HTML para la página de inicio de sesión.
@@ -17,10 +18,15 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
       - `if loop.index == 1`: Muestra un ícono de corona en la primera posición de la tabla.
   
 - `newPassword.html`: La plantilla HTML para la página de cambiar contraseña.
+- `apology.html`: Es una plantilla utilizada para mostrar mensajes de disculpa al usuario en caso de errores. Se utiliza en conjunto con la función `apology` en el archivo `helpers.py`. La plantilla muestra una imagen generada dinámicamente utilizando la API de memegen.link, que muestra el mensaje de error proporcionado.
+
+- `gmAdivinaPalabra.html`: Es una plantilla utilizada para el juego "Adivina la Palabra". Muestra una palabra oculta con sus letras ocultas, una pista, la cantidad de intentos restantes y las letras ingresadas por el jugador. También incluye un botón para cargar una nueva palabra. El juego en sí se implementa utilizando JavaScript en el archivo `gmAdivina.js`.
+
+- `gmSerpiente.html`: Es una plantilla utilizada para el juego de la serpiente. Muestra un tablero de juego donde se juega la serpiente, junto con el puntaje actual y el puntaje más alto alcanzado. El juego en sí se implementa utilizando JavaScript en el archivo `gmSerpiente.js`.
 
 - `playtopia.db`: Base de datos SQLite que almacena la información de los usuarios.
 
-###`static/`: Directorio que contiene los archivos estáticos, como imágenes y hojas de estilo CSS.
+### `static/`: Directorio que contiene los archivos estáticos, como imágenes y hojas de estilo CSS.
 - En la carpeta `static` se encuentran los siguientes elementos relacionados con el proyecto:
 
 - `img`: Carpeta que contiene las imágenes utilizadas en el proyecto.
