@@ -4,7 +4,6 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
 
 ## Estructura de archivos
 
-- `app.py`: El archivo principal de la aplicación Flask que maneja las rutas y la lógica del servidor.
 - `layout.html`: La plantilla base de HTML que define la estructura común de todas las páginas.
 - `index.html`: La plantilla HTML para la página de inicio que muestra los juegos disponibles.
 - `login.html`: La plantilla HTML para la página de inicio de sesión.
@@ -19,10 +18,9 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
   
 - `newPassword.html`: La plantilla HTML para la página de cambiar contraseña.
 
-- `helpers.py`: Módulo de ayuda que contiene funciones auxiliares utilizadas por `app.py`.
 - `playtopia.db`: Base de datos SQLite que almacena la información de los usuarios.
 
-- `static/`: Directorio que contiene los archivos estáticos, como imágenes y hojas de estilo CSS.
+###`static/`: Directorio que contiene los archivos estáticos, como imágenes y hojas de estilo CSS.
 - En la carpeta `static` se encuentran los siguientes elementos relacionados con el proyecto:
 
 - `img`: Carpeta que contiene las imágenes utilizadas en el proyecto.
@@ -34,6 +32,23 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
 - Archivos JS y CSS específicos para cada juego: Estos archivos se encuentran dentro de carpetas con el nombre del juego correspondiente (por ejemplo, `gmJuego1.js` y `gmJuego1.css` para el primer juego, `gmJuego2.js` y `gmJuego2.css` para el segundo juego, y así sucesivamente).
 
 - `gmNombreJuego.html`: Plantilla HTML de cada uno de los juegos.
+
+  ### app.py
+El archivo `app.py` es el archivo principal de la aplicación Flask. Contiene la configuración de la aplicación, las rutas y las funciones asociadas a cada una de ellas. Aquí se definen las siguientes rutas:
+
+- `/`: Ruta principal que muestra el portafolio de juegos del usuario.
+- `/login`: Ruta para iniciar sesión en la aplicación.
+- `/logout`: Ruta para cerrar sesión.
+- `/register`: Ruta para registrar nuevos usuarios.
+- `/newPsw`: Ruta para cambiar la contraseña del usuario.
+- `/gmCarrera`, `/gmMemory`, `/gmAdivinaPalabra`, `/gmAhorcado`, `/gmSpace`, `/gmSimon`, `/gmPPT`, `/gmSerpiente`, `/gmOperaciones`: Rutas correspondientes a cada juego individual. Algunas de estas rutas están actualmente comentadas y no contienen funcionalidad específica.
+- `/ranking`: Ruta que muestra el ranking de los jugadores en el juego de la serpiente.
+
+### helpers.py
+El archivo `helpers.py` contiene funciones auxiliares utilizadas en la aplicación Flask. Incluye las siguientes funciones:
+
+- `apology`: Función para mostrar un mensaje de disculpa al usuario en caso de error.
+- `login_required`: Decorador que verifica si el usuario ha iniciado sesión antes de acceder a ciertas rutas.
 
 
 ## Requisitos
