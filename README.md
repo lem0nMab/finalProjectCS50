@@ -1,6 +1,6 @@
 # Playtopia
 
-Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una variedad de juegos divertidos. Este repositorio contiene el código fuente de la aplicación web de Playtopia.
+Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una variedad de juegos divertidos. Este archivo contiene el código fuente de la aplicación web de Playtopia.
 
 ## Estructura de archivos
 
