@@ -37,8 +37,6 @@ Playtopia es una plataforma de juegos en línea donde puedes disfrutar de una va
 - `style.css`: Hoja de estilo CSS principal que se aplica en todo el proyecto.
 - Archivos JS y CSS específicos para cada juego: Estos archivos se encuentran dentro de carpetas con el nombre del juego correspondiente (por ejemplo, `gmJuego1.js` y `gmJuego1.css` para el primer juego, `gmJuego2.js` y `gmJuego2.css` para el segundo juego, y así sucesivamente).
 
-- `gmNombreJuego.html`: Plantilla HTML de cada uno de los juegos.
-
   ### app.py
 El archivo `app.py` es el archivo principal de la aplicación Flask. Contiene la configuración de la aplicación, las rutas y las funciones asociadas a cada una de ellas. Aquí se definen las siguientes rutas:
 
@@ -60,9 +58,12 @@ El archivo `helpers.py` contiene funciones auxiliares utilizadas en la aplicaci�
 ## Requisitos
 
 - Python 3.9 o superior
-- Flask
-- Flask-Session
-- cs50
+
+### El archivo `requirements.txt` contiene las siguientes dependencias:
+- Flask: Es un framework web ligero para Python que facilita la creación de aplicaciones web. Proporciona herramientas para el enrutamiento de URLs, el manejo de solicitudes y respuestas, la gestión de sesiones y otras funcionalidades necesarias para construir aplicaciones web.
+- Flask-Session: Es una extensión de Flask que permite utilizar sesiones de manera sencilla en aplicaciones web. Proporciona un mecanismo para almacenar y acceder a datos de sesión en el servidor, lo que es útil para mantener el estado de la aplicación entre solicitudes del usuario.
+- cs50: Es una biblioteca proporcionada por CS50, un curso de introducción a la ciencia de la computación de la Universidad de Harvard. Proporciona funcionalidades adicionales para trabajar con bases de datos SQLite, manejo de formularios y otros aspectos útiles en el desarrollo web.
+- requests: Es una biblioteca que simplifica el envío de solicitudes HTTP en Python. Proporciona una interfaz amigable para realizar solicitudes GET, POST y otras operaciones HTTP, lo que es útil para comunicarse con APIs externas o para acceder a recursos web.
 
   ## Créditos > Integrantes
 
